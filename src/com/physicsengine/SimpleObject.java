@@ -49,6 +49,8 @@ public class SimpleObject {
     }
 
     public String toString(){
-        return "Mass: " + this.mass + ", Velocity: " + this.velocity + ", Displacement: " + this.displacement;
+        return "Mass: " + String.format("%.2f", this.mass)
+                + ", Velocity: " + this.velocity.toString()
+                + ", Displacement: " + this.displacement.toString();
     }
 }

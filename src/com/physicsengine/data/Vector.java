@@ -57,6 +57,6 @@ public class Vector {
 
     @Override
     public String toString() {
-        return "magnitude " + magnitude + ", angle " + angle + "°";
+        return "magnitude " + String.format("%.2f", magnitude) + ", angle " + String.format("%.2f", angle) + "°";
     }
 }
